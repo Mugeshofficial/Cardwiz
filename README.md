@@ -1,12 +1,11 @@
-Cardwiz Game in Java
-This Java program implements a simple card game called Cardwiz,using Swing for the GUI.
-
-Class Overview
-1. Cardwiz Class
+Cardwiz Game Overview in Java
+Class Structure
+Cardwiz Class
 Inner Class: Card
-Represents individual playing cards with attributes for:
-Type (Suit): The suit of the card (Clubs, Spades, Hearts, Diamonds).
-Value (Rank): The rank of the card (Ace, 2-10, Jack, Queen, King).
+Represents individual playing cards.
+Attributes:
+Type (Suit): Clubs, Spades, Hearts, Diamonds.
+Value (Rank): Ace, 2-10, Jack, Queen, King.
 Methods:
 Value Retrieval: Returns the numerical value of the card.
 Image Path Generation: Provides the file path for the card's image.
@@ -17,20 +16,20 @@ dealerHand: Stores the dealer's hand of cards.
 playerHand: Stores the player's hand of cards.
 dealerSum: Tracks the total points for the dealer.
 playerSum: Tracks the total points for the player.
-2. Game Logic
+Game Logic
 resetGame(): Resets the game state and shuffles the deck.
 startGame(): Initializes the game and deals the initial cards.
 buildDeck(): Creates a full deck of 52 cards.
 shuffleDeck(): Randomizes the order of cards in the deck.
-reduceDealerAce(): Adjusts the dealer's total if Aces cause the sum to exceed 21.
-reducePlayerAce(): Adjusts the player's total similarly for Aces.
-3. Game GUI
-Custom JPanel (gamePanel): Handles the rendering of cards and displays the game status.
+reduceDealerAce(): Adjusts dealer's total if Aces exceed 21.
+reducePlayerAce(): Adjusts player's total similarly for Aces.
+Game GUI
+Custom JPanel (gamePanel): Renders cards and displays game status.
 Buttons:
 Hit: Draws a card for the player.
 Stay: Ends the player's turn and reveals the dealer's hand.
 Restart: Resets the game for a new round.
-4. Main Class
-The App class contains the main method, which creates an instance of Cardwiz to start the game.
+Main Class
+App Class: Contains the main method to start the game by creating an instance of Cardwiz.
 Conclusion
-Cardwiz is a basic card game implementation that allows player interaction through a graphical user interface. Future enhancements could include improved user experience and graphical elements.
+Cardwiz is a simple card game with a GUI, allowing for player interaction. Future enhancements could improve user experience and graphics.
