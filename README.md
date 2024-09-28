@@ -1,49 +1,42 @@
 # Cardwiz Game Overview
+Cardwiz Game in Java This Java program implements a simple card game called Cardwiz,using Swing for the GUI
+
 ![image](https://github.com/user-attachments/assets/7aec7cc4-54dd-485b-bbcc-3ced1f37771d)
 
-## Class Structure
+# Cardwiz Game Rules
 
-### Cardwiz Class
-The main class representing the Cardwiz game.
+## Objective
+The goal is to have a hand value closer to 21 than the dealer without exceeding it.
 
-#### Inner Class: Card
-Represents individual playing cards.
+## Card Values
+- **Aces** can be worth 1 or 11 points (player’s choice).
+- **Face cards** (Jack, Queen, King) are worth 10 points.
+- All other cards are worth their numeric value.
 
-- **Attributes**:
-  - **Type (Suit)**: Clubs, Spades, Hearts, Diamonds.
-  - **Value (Rank)**: Ace, 2-10, Jack, Queen, King.
+## Game Setup
+- A standard deck of 52 cards is used.
+- The player and dealer are each dealt two cards.
+- One of the dealer's cards is hidden.
 
-- **Methods**:
-  - **Value Retrieval**: Returns the numerical value of the card.
-  - **Image Path Generation**: Provides the file path for the card's image.
+## Gameplay
 
-### Game Variables
-- **deck**: Holds the deck of cards.
-- **hiddenCard**: The dealer's hidden card.
-- **dealerHand**: Stores the dealer's hand of cards.
-- **playerHand**: Stores the player's hand of cards.
-- **dealerSum**: Tracks the total points for the dealer.
-- **playerSum**: Tracks the total points for the player.
+### Player's Turn
+- The player can choose to "Hit" (draw another card) or "Stay" (end their turn).
+- The player can continue to hit until they either stay or their total exceeds 21 (bust).
 
-### Game Logic
-- **resetGame()**: Resets the game state and shuffles the deck.
-- **startGame()**: Initializes the game and deals the initial cards.
-- **buildDeck()**: Creates a full deck of 52 cards.
-- **shuffleDeck()**: Randomizes the order of cards in the deck.
-- **reduceDealerAce()**: Adjusts dealer's total if Aces exceed 21.
-- **reducePlayerAce()**: Adjusts player's total similarly for Aces.
+### Dealer's Turn
+- Once the player stays, the dealer reveals their hidden card.
+- The dealer must hit until their hand totals at least 17 points.
 
-### Game GUI
-- **Custom JPanel (gamePanel)**: Renders cards and displays game status.
+## Winning Conditions
+- If the player’s total exceeds 21, they lose.
+- If the dealer's total exceeds 21, the player wins.
+- If the player’s total is higher than the dealer's total (without busting), the player wins.
+- If the totals are equal, it’s a tie (push).
+- If the dealer's total is higher, the dealer wins.
 
-#### Buttons:
-- **Hit**: Draws a card for the player.
-- **Stay**: Ends the player's turn and reveals the dealer's hand.
-- **Restart**: Resets the game for a new round.
-
-## Main Class
-### App Class
-Contains the main method to start the game by creating an instance of `Cardwiz`.
+## Special Rules
+- Aces are adjusted after the initial total calculation to
 
 ## Conclusion
 Cardwiz is a simple card game with a GUI, allowing for player interaction. Future enhancements could improve user experience and graphics.
