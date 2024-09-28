@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.ArrayList; 
 import java.util.Random;
 
-public class BlackJack {
+public class Cardwiz {
     private class Card {
         String type; // The type of the card (e.g., C, S, H, D)
         String value; // The value of the card (e.g., A, 2, 3, ..., 10, J, Q, K)
@@ -158,7 +158,7 @@ public class BlackJack {
 
 
 
-    BlackJack() {
+    Cardwiz() {
         startGame();
 
         frame.setVisible(true);
