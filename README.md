@@ -1,4 +1,5 @@
 # Cardwiz Game Overview
+![image](https://github.com/user-attachments/assets/7aec7cc4-54dd-485b-bbcc-3ced1f37771d)
 
 ## Class Structure
 
