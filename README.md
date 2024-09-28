@@ -1,5 +1,5 @@
 Cardwiz Game in Java
-This Java program implements a simple card game called Cardwiz, similar to Blackjack, using Swing for the GUI.
+This Java program implements a simple card game called Cardwiz,using Swing for the GUI.
 
 Class Overview
 1. Cardwiz Class
