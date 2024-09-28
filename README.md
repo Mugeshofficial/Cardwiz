@@ -1,22 +1,36 @@
-<<<<<<< HEAD
-## Getting Started
+Cardwiz Game in Java
+This Java program implements a simple card game called Cardwiz, similar to Blackjack, using Swing for the GUI.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# Cardwiz
->>>>>>> 9e37e56ca38eda58c883635d134b751a7c0ec1d5
+Class Overview
+1. Cardwiz Class
+Inner Class: Card
+Represents individual playing cards with attributes for:
+Type (Suit): The suit of the card (Clubs, Spades, Hearts, Diamonds).
+Value (Rank): The rank of the card (Ace, 2-10, Jack, Queen, King).
+Methods:
+Value Retrieval: Returns the numerical value of the card.
+Image Path Generation: Provides the file path for the card's image.
+Game Variables
+deck: Holds the deck of cards.
+hiddenCard: The dealer's hidden card.
+dealerHand: Stores the dealer's hand of cards.
+playerHand: Stores the player's hand of cards.
+dealerSum: Tracks the total points for the dealer.
+playerSum: Tracks the total points for the player.
+2. Game Logic
+resetGame(): Resets the game state and shuffles the deck.
+startGame(): Initializes the game and deals the initial cards.
+buildDeck(): Creates a full deck of 52 cards.
+shuffleDeck(): Randomizes the order of cards in the deck.
+reduceDealerAce(): Adjusts the dealer's total if Aces cause the sum to exceed 21.
+reducePlayerAce(): Adjusts the player's total similarly for Aces.
+3. Game GUI
+Custom JPanel (gamePanel): Handles the rendering of cards and displays the game status.
+Buttons:
+Hit: Draws a card for the player.
+Stay: Ends the player's turn and reveals the dealer's hand.
+Restart: Resets the game for a new round.
+4. Main Class
+The App class contains the main method, which creates an instance of Cardwiz to start the game.
+Conclusion
+Cardwiz is a basic card game implementation that allows player interaction through a graphical user interface. Future enhancements could include improved user experience and graphical elements.
